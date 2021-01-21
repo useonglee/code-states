@@ -16,8 +16,10 @@ body {
   }
   main {
     background: #f9f9f9;
-    text-align: center;
   }
   aside {
     background: #eee;
+  }
+  #navigation-title {
+    text-align: center;
   }
