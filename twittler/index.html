@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="data.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    </head>
+    <body>
+        <!-- TODO:왼쪽 사이드 바 -->
+        <menu>
+        <section id = left-sideBar>
+          <div class ="menu">
+          <div class = "tweet-img">
+            <i class="fab fa-twitter" aria-hidden="true" style="font-size: 28px;"></i>
+          </div>
+          </div>
+          <div class="menu">
+            <div class = "icon"><i class="fas fa-home" aria-hidden="true"></i>             
+            </div>
+            <p class="menu-name-first">홈</p>
+          </div>
+          <div class="menu">
+            <div class = "icon"><i class="fas fa-hashtag" aria-hidden="true"></i></div>
+            <p class="menu-name">탐색하기</p>
+          </div>
+          <div class="menu">
+            <div  class = "icon"><i class="fas fa-bell" aria-hidden="true"></i></div>
+            <p class="menu-name">알림</p>
+          </div>
+          <div class="menu">
+            <div class = "icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <p class="menu-name">쪽지</p>
+          </div>
+          <div class="menu">
+            <div class = "icon"><i class="fas fa-bookmark" aria-hidden="true"></i></div>
+            <p class="menu-name">북마크</p>
+          </div>
+          <div class="menu">
+            <div class = "icon"><i class="fas fa-list-ul" aria-hidden="true"></i></div>
+            <p class="menu-name">리스트</p>
+          </div>
+          <div class="menu">
+            <div class = "icon"><i class="fas fa-user" aria-hidden="true"></i></div>
+            <p class="menu-name">프로필</p>
+          </div>
+          <div class="menu">
+            <div class = "icon"><i class="fas fa-comment-dots" aria-hidden="true"></i></div>
+            <p class="menu-name">더 보기</p>
+          </div>
+            <button id = "menu-tweet">트윗</button>
+          </div>
+        </section>
+      </menu>
+
+
+        <!-- TODO:메인 -->
+        <main>
+          <!-- header -->
+            <header>
+              <div class = "tweet-header">
+                <p class="home-tilte">홈</p>
+              </div>
+              <button id = "refresh">
+                <i class="fas fa-redo-alt" aria-hidden="true"></i>
+              </button>
+            </header>
+
+            <!-- tweet section -->
+            <section id="new-tweetContent">
+              <div id = "new-user-img">
+                <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin: 0.7rem 0.8rem"></i>
+              </div>
+              <div id = "new-textComment">
+                <input type="text" id = newComment placeholder="무슨 일이 일어나고 있나요?">                
+                <span class = "new-comment-Setting">                  
+                  <i class="far fa-image" aria-hidden="true" style="margin: 20px;"></i>                  
+                  <i class="fas fa-gift" aria-hidden="true" style="margin: 20px;"></i>
+                  <i class="far fa-calendar-alt" aria-hidden="true" style="margin: 20px;"></i>
+                  <i class="far fa-smile"  aria-hidden="true" style="margin: 20px;"></i>                  
+                  <button id="tweetButton">트윗</button>
+                  </span>
+              </div>                 
+            </section>
+            
+            <section id = "tweetContents">              
+              <!-- TODO:댓글 목록 -->
+              <ul>
+                <li class = "Contents">
+                  <div class = "user-img">
+                    <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin-top: 0.5rem;"></i>
+                  </div>                  
+                  <div class = "comment">
+                  <span class = "userName">                      
+                    코드스테이츠 · 
+                    <span class = createAt>
+                     3분
+                    </span>
+                  </span>
+                  <div class = "textContent">돈은 취업하고 주세요</div>
+                  <span class = "comment-Setting">
+                  <i class="far fa-comment-dots" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="fas fa-retweet" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="far fa-heart" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="far fa-share-square" aria-hidden="true" style="margin: 10px 40px"></i>
+                  <i class="far fa-chart-bar" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  </span>
+                </div>
+                </li>
+                <li class = "Contents">
+                  <div class = "user-img">
+                    <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin-top: 0.5rem;"></i>
+                  </div>                  
+                  <div class = "comment">
+                  <span class = "userName">                      
+                    나는우성123 · 
+                    <span class = createAt>
+                     52분
+                    </span>
+                  </span>
+                  <div class = "textContent">코딩 재밌어요!</div>
+                  <span class = "comment-Setting">
+                  <i class="far fa-comment-dots" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="fas fa-retweet" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="far fa-heart" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="far fa-share-square" aria-hidden="true" style="margin: 10px 40px"></i>
+                  <i class="far fa-chart-bar" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  </span>
+                </div>
+                </li>
+                <li class = "Contents">
+                  <div class = "user-img">
+                    <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin-top: 0.5rem;"></i>
+                  </div>                  
+                  <div class = "comment">
+                  <span class = "userName">                      
+                    홍식님짱짱짱 · 
+                    <span class = createAt>
+                     1시간
+                    </span>
+                  </span>
+                  <div class = "textContent">라떼는 말이야~var는 들어봤니?</div>
+                  <span class = "comment-Setting">
+                  <i class="far fa-comment-dots" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="fas fa-retweet" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="far fa-heart" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="far fa-share-square" aria-hidden="true" style="margin: 10px 40px"></i>
+                  <i class="far fa-chart-bar" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  </span>
+                </div>
+                </li>
+                <li class = "Contents">
+                  <div class = "user-img">
+                    <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin-top: 0.5rem;"></i>
+                  </div>                  
+                  <div class = "comment">
+                  <span class = "userName">                      
+                    트위틀러 매니저 · 
+                    <span class = createAt>
+                     5시간
+                    </span>
+                  </span>
+                  <div class = "textContent">너 하라는 목업은 다 했니? css 상태 좀 볼까?</div>
+                  <span class = "comment-Setting">
+                  <i class="far fa-comment-dots" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="fas fa-retweet" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="far fa-heart" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="far fa-share-square" aria-hidden="true" style="margin: 10px 40px"></i>
+                  <i class="far fa-chart-bar" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  </span>
+                </div>
+                </li>
+                <li class = "Contents">
+                  <div class = "user-img">
+                    <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin-top: 0.5rem;"></i>
+                  </div>                  
+                  <div class = "comment">
+                  <span class = "userName">                      
+                    Fullpre 10기 수강생 · 
+                    <span class = createAt>
+                     12시간
+                    </span>
+                  </span>
+                  <div class = "textContent">풀 프리 10기 모두 화이팅~!!</div>
+                  <span class = "comment-Setting">
+                  <i class="far fa-comment-dots" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="fas fa-retweet" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="far fa-heart" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  <i class="far fa-share-square" aria-hidden="true" style="margin: 10px 40px"></i>
+                  <i class="far fa-chart-bar" aria-hidden="true" style="margin: 10px 40px;"></i>
+                  </span>
+                </div>                
+                </li>
+                <li class = "Contents">
+                  <div class = "comment-dots" style="margin: 0.5rem;">더 보기</div>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </main>
+
+        <!-- TODO:오른쪽 사이드바 -->
+        <section id = right-sideBar>
+          <section>
+          <div id = searchBar>
+            <div>
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </div>
+            <input type="text" placeholder="트위터 검색">
+          </div>          
+            
+              <div id = "trendbar">
+                <div id = "myTrend">
+                  <p>나를 위한 트렌드</p>
+                  <span>
+                    <i class="fas fa-user-cog"></i>
+                  </span>                  
+                </div>
+
+                <div class = "trend">
+                  <div class = "trend-subtitle">대한민국에서 트렌드 중</div>
+                  <div class = "trend-hashtag">코드스테이츠</div>
+                  <div class = "trend-twitcount">38,714 트윗</div>
+                </div>
+                <div class = "trend">
+                  <div class = "trend-subtitle">실시간 트렌드</div>
+                  <div class = "trend-hashtag">자바스크립트</div>
+                  <div class = "trend-twitcount">51,894 트윗</div>
+                </div>
+                <div class = "trend">
+                    <div class = "trend-subtitle">대한민국에서 트렌드 중</div>
+                    <div class = "trend-hashtag">모각코</div>
+                    <div class = "trend-twitcount">8,140 트윗</div>
+                </div>
+                <div class = "trend">
+                  <div class = "trend-subtitle">대한민국에서 트렌드 중</div>
+                  <div class = "trend-hashtag">멘탈 와사삭</div>
+                  <div class = "trend-twitcount">2,146 트윗</div>
+                </div>
+                <div class = "trend">
+                  <div class = "trend-subtitle">대한민국에서 트렌드 중</div>
+                  <div class = "trend-hashtag">#트위틀러 목업</div>                  
+                </div>
+                <div class = "trend-dots">
+                  <p>더 보기</p>
+                </div>
+              </div>       
+         </section> 
+      </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
