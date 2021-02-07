@@ -6,9 +6,11 @@
         <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
         <script src="data.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <title>우성이의 트위틀러!</title>
     </head>
     <body>
-        <!-- TODO:왼쪽 사이드 바 -->
+        <!------------------------------- TODO:왼쪽 사이드 바 ----------------------------------------->
         <menu>
         <section id = left-sideBar>
           <div class ="menu">
@@ -55,9 +57,9 @@
       </menu>
 
 
-        <!-- TODO:메인 -->
+        <!------------------------------------- TODO:메인 ----------------------------------------->
         <main>
-          <!-- header -->
+         <!----------------------------------- TODO:header ----------------------------------------->
             <header>
               <div class = "tweet-header">
                 <p class="home-tilte">홈</p>
@@ -67,10 +69,10 @@
               </button>
             </header>
 
-            <!-- tweet section -->
+            <!--------------------------------- TODO:트윗 입력창 ----------------------------------------->
             <section id="new-tweetContent">
               <div id = "new-user-img">
-                <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin: 0.7rem 0.8rem"></i>
+                <img class ="profile" src ="images/1611404421525-29.jpg">                
               </div>
               <div id = "new-textComment">
                 <input type="text" id = newComment placeholder="무슨 일이 일어나고 있나요?">                
@@ -83,13 +85,30 @@
                   </span>
               </div>                 
             </section>
+
+            <div class = "Contents">
+              <button class = "comment-dots" style="margin: 0.5rem;">비밀 트윗</button>
+            </div>
+
+
             
-            <section id = "tweetContents">              
-              <!-- TODO:댓글 목록 -->
+            <!-------------------------------------- TODO:DON 영역 --------------------------------------------->             
+            <ul id = tweetList>                  
+            </ul>
+
+
+            
+
+
+            <!---------------------------------- TODO:작성되어있는 트윗 목록 --------------------------------------------->           
+            <section id = "tweetContents">           
               <ul>
                 <li class = "Contents">
+                  <button class = "comment-dots" style="margin: 0.5rem;">팔로우 더 보기</button>
+                </li>
+                <li class = "Contents">
                   <div class = "user-img">
-                    <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin-top: 0.5rem;"></i>
+                    <img class = "profile" src ="images/코드스테이츠.png">                   
                   </div>                  
                   <div class = "comment">
                   <span class = "userName">                      
@@ -110,11 +129,11 @@
                 </li>
                 <li class = "Contents">
                   <div class = "user-img">
-                    <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin-top: 0.5rem;"></i>
+                    <img class = "profile" src="images/20201205_010626.jpg">                    
                   </div>                  
                   <div class = "comment">
                   <span class = "userName">                      
-                    나는우성123 · 
+                    우성아 너 왜우성? · 
                     <span class = createAt>
                      52분
                     </span>
@@ -131,7 +150,8 @@
                 </li>
                 <li class = "Contents">
                   <div class = "user-img">
-                    <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin-top: 0.5rem;"></i>
+                    <img class = "profile" src ="images/홍식님.png">
+                    <!-- <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin-top: 0.5rem;"></i> -->
                   </div>                  
                   <div class = "comment">
                   <span class = "userName">                      
@@ -152,7 +172,7 @@
                 </li>
                 <li class = "Contents">
                   <div class = "user-img">
-                    <i class = "fas fa-user" aria-hidden="true" style="font-size: 28px; margin-top: 0.5rem;"></i>
+                    <img class = "profile" src='images/트위틀러 마크.png'>                    
                   </div>                  
                   <div class = "comment">
                   <span class = "userName">                      
@@ -192,15 +212,18 @@
                   </span>
                 </div>                
                 </li>
-                <li class = "Contents">
-                  <div class = "comment-dots" style="margin: 0.5rem;">더 보기</div>
-                </li>
+
+                
+                
               </ul>
             </section>
-          </div>
+
+            
+                      
         </main>
 
-        <!-- TODO:오른쪽 사이드바 -->
+
+        <!------------------------------- TODO:오른쪽 사이드 바 ----------------------------------------->
         <section id = right-sideBar>
           <section>
           <div id = searchBar>
@@ -249,6 +272,7 @@
          </section> 
       </section>
 
-        <script src="script.js"></script>
+        <script src ="script.js"></script>
+        
     </body>
 </html>
