@@ -56,7 +56,6 @@ describe('apply에 관해서', () => {
     function foo() {
       return this;
     }
-
     const context = { msg: 'welcome you!' }
 
     expect(foo.apply(context)).to.eql({msg: 'welcome you!'})
